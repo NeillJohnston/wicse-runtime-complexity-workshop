@@ -71,7 +71,7 @@ plt.savefig('plot.png', bbox_inches='tight')
 
 # Load responses and run
 res_file = sys.argv[1]
-prob = sys.argv[2]
+prob = 'Form Responses 1'
 res_sheet = load_workbook(filename=res_file)[prob]
 name_index, code_index = ('B', 'C') if res_sheet[f'B{1}'].value == 'Name' else ('C', 'B')
 for i in range(2, res_sheet.max_row+1):
